@@ -1,0 +1,60 @@
+table td,
+table th {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid black;
+  
+  
+}
+table th{
+  background-color: #2b619e;
+  color: white;
+}
+table{
+  border-collapse: collapse;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px;
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2b619e;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
+div{
+  display: flex;
+  justify-content: space-around;
+
+}
+form{
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: rgba(122, 128, 133, 0.2) 0px 8px 24px;
+  padding: 30px;
+  border-radius: 5px;
+  
+  
+}
+label{
+  justify-content: center;
+  height: 20px;
+}
+input{
+
+}
+input[type=submit]{
+  background-color: #2b619e;
+  width: 100%;
+  color: white;
+  padding: 10px 10px;
+  justify-content: space-around;
+  border-radius: 10px;
+
+}
+
+
