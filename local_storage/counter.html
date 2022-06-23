@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter using LS</title>
+</head>
+<body>
+    <h1> counter: <span id="counter"></span></h1>
+    <button id="increase">increase</button>
+    <button id="decrease">decrease</button>
+</body>
+
+
+<script>
+
+    document.querySelector("#increase").addEventListener("click",increaseCount);
+    document.querySelector("#decrease").addEventListener("click",decreaseCount);
+    var count=localStorage.getItem("count")||0;
+    document.getElementById("counter").innerText= count;
+
+
+    function increaseCount(){
+    count++;
+    document.getElementById("counter").innerText=count;
+        localStorage.setItem("count",count);
+    }
+
+    function decreaseCount(){
+        count--;
+        document.getElementById("counter").innerText=count;
+        localStorage.setItem("count",count);
+    }
+</script>
+
+</html>
